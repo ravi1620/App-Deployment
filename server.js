@@ -122,7 +122,7 @@ app.post("/Signup", upload.single("profilePic"), async (req, res) => {
 });
 
 app.listen(process.env.port, () => {
-  console.log(`Listening to Port 9876 ${process.env.port}`);
+  console.log(`Listening to Port ${process.env.port}`);
 });
 
 let connectToDB = async () => {
