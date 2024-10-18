@@ -12,7 +12,7 @@ return store;
         <TopNavigation></TopNavigation>
         <h1>Dashboard</h1>
 <h1>{storeObj.loginDetails.firstName} {storeObj.loginDetails.lastName}</h1>
-<img src={`http://localhost:9876/${storeObj.loginDetails.profilePic}`}></img>
+<img src={`/${storeObj.loginDetails.profilePic}`}></img>
     </div>
   )
 }

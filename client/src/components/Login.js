@@ -28,7 +28,7 @@ let validateToken = async ()=>{
     body: sendData,
   };
 
-  let jsonData = await fetch("http://localhost:9876/validateToken", requestOptions);
+  let jsonData = await fetch("/validateToken", requestOptions);
   let jsoData = await jsonData.json();
   console.log(jsoData);
 
@@ -55,7 +55,7 @@ let validateToken = async ()=>{
       body: sendData,
     };
 
-    let jsonData = await fetch("http://localhost:9876/Login", requestOptions);
+    let jsonData = await fetch("/Login", requestOptions);
 
     let jsoData = await jsonData.json();
 
